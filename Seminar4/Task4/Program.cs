@@ -7,7 +7,7 @@ int[] RandomArray()
         int[] NewArray = new int[8];
         for (int i = 0; i < NewArray.Length; i++)
         {
-            NewArray[i] = new Random().Next(-999,999);
+            NewArray[i] = new Random().Next(0,20);
         }
         
         
@@ -20,6 +20,7 @@ int[] RandomArray()
     }
 
 int[] Array = RandomArray();
+
 int max = 0;
 int secondMax = 0;
 for (int i = 0; i < Array.Length; i++)
@@ -29,7 +30,7 @@ for (int i = 0; i < Array.Length; i++)
         secondMax = max;
         max = Array[i];
     }
-    else if (secondMax < Array[i] && secondMax != max) 
+    else if (secondMax < Array[i] && secondMax != max && Array[i] != max) 
     {
         secondMax = Array[i];
     }
