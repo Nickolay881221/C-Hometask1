@@ -69,7 +69,7 @@ for (int j = 0; j < Arr.GetLength(1); j++)
             }
         }
         sumMin += min;
-        min = 0;
+        min = 1000;
     }
 return sumMin;
 }
