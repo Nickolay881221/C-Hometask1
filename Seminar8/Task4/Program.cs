@@ -16,7 +16,7 @@ int[,] CreateMatrix(int row, int column, int min, int max) // создание �
 {
     int[,] Array = new int[row, column];
     Random rnd = new Random();
-    for (int k = 0; k <= row % 2; k++)
+    for (int k = 0; k <= row / 2; k++)
     {
         for (int i = k; i < Array.GetLength(1) - 1 - k; i++)
         {
