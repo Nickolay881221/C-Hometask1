@@ -38,5 +38,5 @@ int[,] CreateMatrix(int row, int column, int min, int max) // создание �
     return Array;
 }
 
-int[,] TestMatrix = CreateMatrix(6, 6, 0, 9);
+int[,] TestMatrix = CreateMatrix(5, 5, 0, 9);
 PrintArray(TestMatrix);
